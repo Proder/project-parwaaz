@@ -1,14 +1,15 @@
 
 .navbar-container {
     width: 100vw;
-    color: #116A7B;
+    color: #ECE5C7;
     position: relative;
+    
 }
 
 .nav {
-    height: 50px;
+    height: 10vh;
     width: 100%;
-    background-color: #ECE5C7;
+    background-color: #116A7B;
     position: relative;
 }
 
@@ -19,8 +20,7 @@
 .nav>.nav-header>.nav-title {
     display: inline-block;
     font-size: 22px;
-
-    padding: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
 }
 
 .nav>.nav-btn {
@@ -30,18 +30,20 @@
 .nav>.nav-links {
     display: inline;
     float: right;
-    font-size: 18px;
+    font-size: 21px;
+    
 }
 
 .nav>.nav-links>a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 19px 15px 19px 15px;
     text-decoration: none;
-    color: #116A7B;
+    color: #ECE5C7;
+    background-color: #116A7B;
 }
 
 .nav>.nav-links>a:hover {
-    background-color: #CDC2AE;
+    background-color: #c2dedc6c;
 }
 
 .nav>#nav-check {
@@ -70,19 +72,20 @@
         display: inline-block;
         width: 50px;
         height: 50px;
-        padding: 13px;
+        padding: 18px;
     }
 
     .nav>.nav-btn>label:hover,
     .nav #nav-check:checked~.nav-btn>label {
-        background-color: #CDC2AE;
+        background-color: #116A7B;
+        cursor: pointer;
     }
 
     .nav>.nav-btn>label>span {
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 2px solid #116A7B;
+        border-top: 3px solid #ECE5C7;
     }
 
     .nav-links::-webkit-scrollbar {
@@ -107,6 +110,7 @@
         overflow-y: hidden;
         top: 50px;
         left: 0px;
+        color: #116A7B;
     }
 
     .nav>.nav-links>a {
