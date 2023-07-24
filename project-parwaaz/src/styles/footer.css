@@ -1,0 +1,36 @@
+.footer{
+    background-color: #116A7B;
+    color: #ECE5C7;
+    height: 40vh;
+    /* width: 100%; */
+    bottom: 0;
+    position:relative;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-list{
+    display: flex;
+    
+}
+.footer-list>.list-items{
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    color: #ECE5C7;
+    font-size: 20px;
+}
+
+.spacer{
+    display: flex;
+    font-size: 40px;
+    top: -10px;
+    position: relative;
+    color: #C2DEDC;
+}

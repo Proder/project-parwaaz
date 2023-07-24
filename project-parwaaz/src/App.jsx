@@ -1,14 +1,21 @@
 import "./App.css";
-import CarouselComponent from "./components/CarouselComponent";
-
 import Navbar from "./components/Navbar";
+import CarouselComponent from "./components/CarouselComponent";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
-      <Navbar/>
-      
-      </>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <CarouselComponent />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 };
 

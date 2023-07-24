@@ -22,10 +22,10 @@ const Navbar = () => {
             Home
           </a>
           <a href="#" className="option">About Us</a>
-          <a href="#" className="option">Contact Us</a>
-          <a href="#"className="option">Item 1</a>
-          <a href="#" className="option">Item 2</a>
-          <a href="#" className="option">Item 3</a>
+          <a href="#"className="option">Volunteering</a>
+          <a href="#" className="option">Item3</a>
+          <a href="#" className="option">Donate</a>
+          <a href="#" className="option">Contact</a>
          
         </div>
       </div>

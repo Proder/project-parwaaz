@@ -1,15 +1,17 @@
 
 .navbar-container {
-    width: 100vw;
-    color: #ECE5C7;
+    width: 100%;
+    color: #116A7B;
     position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     
 }
 
 .nav {
     height: 10vh;
-    width: 100%;
-    background-color: #116A7B;
+    width:100%;
+    background-color: #ECE5C7;
     position: relative;
 }
 
@@ -38,8 +40,8 @@
     display: inline-block;
     padding: 19px 15px 19px 15px;
     text-decoration: none;
-    color: #ECE5C7;
-    background-color: #116A7B;
+    background-color: #ECE5C7;
+    color: #116A7B;
 }
 
 .nav>.nav-links>a:hover {
@@ -74,7 +76,7 @@
 
     .nav>.nav-btn>label:hover,
     .nav #nav-check:checked~.nav-btn>label {
-        background-color: #116A7B;
+        background-color: #ECE5C7;
         cursor: pointer;
     }
 
@@ -82,7 +84,7 @@
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 3px solid #ECE5C7;
+        border-top: 3px solid #116A7B;
     }
 
     .nav-links::-webkit-scrollbar {
@@ -123,6 +125,7 @@
         animation: slide-down 0.5s ease-in-out;
         height: auto;
         overflow-y: auto;
+        z-index: 10;
     }
 
     @keyframes slide-down {
