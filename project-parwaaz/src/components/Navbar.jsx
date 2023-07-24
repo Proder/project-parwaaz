@@ -1,14 +1,14 @@
 import "../styles/navbar.css";
-import {Link} from "react-router-dom"
 
 const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="nav">
         <input type="checkbox" id="nav-check" />
-        <div className="nav-header">
-          <div className="nav-title">Logo</div>
+        <div className="nav-logo-container">
+          <div className="nav-logo">Logo</div>
         </div>
+
         <div className="nav-btn">
           <label htmlFor="nav-check">
             <span></span>
