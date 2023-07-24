@@ -1,5 +1,4 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import imageOne from "../assets/h.jpg";
 import imageTwo from "../assets/floral.jpg";
 import imageThree from "../assets/diwali.jpg";
@@ -9,7 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const CarouselComponent = () => {
   return (
-    <Carousel showArrows onChange onClickItem onClickThumb autoPlay infiniteLoop showThumbs={false}>
+    <Carousel showArrows onChange onClickItem onClickThumb autoPlay infiniteLoop showThumbs={false} showStatus={false}>
       <div>
         <img src={imageOne} className="carousel-image" />
       </div>
