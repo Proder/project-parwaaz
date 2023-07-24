@@ -3,11 +3,15 @@ import "../styles/footer.css"
 import {Link} from "react-router-dom"
 
 export default function Footer() {
+
+    const linkedInURL = "https://www.linkedin.com/company/project-parwaaz/"
+    const instaURL = "https://www.instagram.com/projectparwaaz.in/"
+
   return (
     <section className="footer">
       <div className="footer-content">
         <div className="footer-list">
-          <Link to="../pages/Careers" className="list-items">
+          <Link to="../pages/Volunteering" className="list-items">
             Careers
           </Link>
           <span className='spacer'>.</span>
@@ -27,6 +31,17 @@ export default function Footer() {
             Contact Us
           </Link>
         </div>
+        <div className='socials'>
+        <Link to={linkedInURL}>
+          <i className="fa-brands fa-linkedin" id='social-icons' />
+        </Link>
+        <Link to={instaURL}>
+          <i className="fa-brands fa-instagram" id='social-icons'/>
+        </Link>
+          <i className="fa-brands fa-twitter" id='social-icons' />
+          <i className="fa-brands fa-youtube" id='social-icons' />
+        </div>
+        <div className='footer-line'><span>©2023 Project Parwaaz | All rights reserved</span></div>
       </div>
     </section>
   );
