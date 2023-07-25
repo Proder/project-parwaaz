@@ -1,27 +1,17 @@
-import Navbar from "./components/Navbar";
-import CarouselComponent from "./components/CarouselComponent";
-import GoToTop from "./components/GoToTop";
-import MyCarousel from "./components/MyCarousel";
 
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./UI/Layout";
+import Home from "./pages/Home";
+import Volunteer from "./pages/Volunteer";
 
 const App = () => {
   return (
-    <>
-     
-  
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <CarouselComponent />
-        <MyCarousel/>
-        <GoToTop />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/volunteer" element={<Volunteer />} />
+      </Routes>
+    </Layout>
   );
 };
 

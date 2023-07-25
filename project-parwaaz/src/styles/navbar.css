@@ -2,16 +2,26 @@
     width: 100%;
     color: #ECE5C7;
     position: relative;
-    
+    z-index: 999;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    height: 70px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: 100%;
     width:100%;
     background-color: #ECE5C7;
     position: relative;
+}
+
+.navbar-container.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .nav-logo-container {
@@ -48,7 +58,7 @@
     padding: 0px 15px;
     text-decoration: none;
     background-color: #ECE5C7;
-    color: #116A7B;
+    color: black;
 }
 
 @media only screen and (min-width:768px) {
