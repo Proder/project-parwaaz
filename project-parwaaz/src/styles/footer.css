@@ -3,7 +3,6 @@
     color: #ECE5C7;
     height: 150px;
     width: 100%;
-
     position: relative;
     left: 0;
     bottom: 0;
@@ -16,6 +15,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 2.5px;
 }
 
 .footer-list{
@@ -42,7 +42,7 @@
 
 #social-icons{
     font-size: 30px;
-    padding: 18px 18px 18px 18px;
+    padding: 0 20px 20px 20px ;
     text-decoration: none;
     color: #ECE5C7;
 }
@@ -62,12 +62,16 @@
     }
     .footer-list>.list-items{
         padding: 5px 5px 5px 5px;
+        font-size: 17px;
     }
     .spacer{
         display:flex;
-        font-size: px;
+        font-size: 30px;
     }
     .footer-line{
-        font-size: 10px;
+        font-size: 10px; 
+    }
+    #social-icons{
+        font-size: 25px;
     }
 }

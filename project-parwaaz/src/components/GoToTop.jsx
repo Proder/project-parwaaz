@@ -29,7 +29,7 @@ const GoToTop = () => {
   
   const goToBtn = () => {
     const targetElement = document.documentElement; // Replace 'target' with the ID of your target element
-    const duration = 100; // Duration of the smooth scroll in milliseconds
+    const duration = 50; // Duration of the smooth scroll in milliseconds
 
     smoothScrollTo(targetElement, duration);
 
