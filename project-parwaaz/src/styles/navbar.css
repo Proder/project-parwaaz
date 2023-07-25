@@ -1,4 +1,3 @@
-
 .navbar-container {
     width: 100%;
     color: #ECE5C7;
@@ -16,7 +15,7 @@
     position: relative;
 }
 
-.nav-logo-container{
+.nav-logo-container {
 
     display: flex;
     aspect-ratio: 1;
@@ -52,19 +51,20 @@
     background-color: #116A7B;
 }
 
-@media only screen and (min-width:768px){
-    .option::after{
+@media only screen and (min-width:768px) {
+    .option::after {
         content: '';
-        display : flex;
+        display: flex;
         margin-top: 5px;
         height: 3px;
         background-color: green;
         width: 100%;
-        transform : scaleX(0);
+        transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.5s ease;
     }
-    .option:hover::after{
+
+    .option:hover::after {
         transform: scaleX(1);
     }
 }
@@ -96,13 +96,14 @@
         aspect-ratio: 1;
         height: inherit;
     }
- 
+
 
     .nav>.nav-btn>label:hover,
     .nav #nav-check:checked~.nav-btn>label {
         background-color: #116A7B;
         cursor: pointer;
     }
+
     .nav #nav-check:checked~.nav-btn>label:hover {
         background-color: #116A7B;
         cursor: pointer;
@@ -139,9 +140,9 @@
         overflow-y: hidden;
         top: 10vh;
         left: 0px;
-        
+
     }
-  
+
     .option {
         display: flex;
         flex: 100%;
@@ -149,9 +150,10 @@
         padding: 15px;
         background: linear-gradient(to left, #116A7B 50%, grey 50%) right !important;
         background-size: 200% !important;
-        transition: 0.5s ease-in ;
+        transition: 0.5s ease-in;
     }
-    .option:hover{
+
+    .option:hover {
         background-position: left !important;
     }
 
