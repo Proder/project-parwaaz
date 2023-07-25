@@ -1,12 +1,12 @@
 import "../styles/myCarousel.css";
-import image0 from "../assets/h.jpg";
+import image0 from "../assets/desk.png";
 import image1 from "../assets/floral.jpg";
 import image2 from "../assets/diwali.jpg";
 import image3 from "../assets/Simplicity.jpg";
 import image4 from "../assets/mountain.jpg";
 import { useState } from "react";
 
-const MyCarousel = () => {
+const Stories = () => {
   const [slideState, setSlideState] = useState(0);
 
   const PrevImage = () => {
@@ -36,33 +36,41 @@ const MyCarousel = () => {
       );
     }
   };
-  const NextImage = () => {
+
+  const animationCodeNext = () =>{
     const animateTitle = document.getElementById("slide-title");
     const animateContent = document.getElementById("slide-content");
     const animateImage = document.getElementById("slide-image");
 
+    animateTitle.classList.add("animate3");
+    animateTitle?.addEventListener(
+      "animationend",
+      () => animateTitle.classList.remove("animate3"),
+      { once: true }
+    );
+    animateContent.classList.add("animate4");
+    animateContent?.addEventListener(
+      "animationend",
+      () => animateContent.classList.remove("animate4"),
+      { once: true }
+    );
+    animateImage.classList.add("animate5");
+    animateImage?.addEventListener(
+      "animationend",
+      () => animateImage.classList.remove("animate5"),
+      { once: true }
+    );
+  }
+  const NextImage = () => {
     if (slideState < slides.length - 1) {
       setSlideState((prevState) => prevState + 1);
-      animateTitle.classList.add("animate3");
-      animateTitle?.addEventListener(
-        "animationend",
-        () => animateTitle.classList.remove("animate3"),
-        { once: true }
-      );
-      animateContent.classList.add("animate4");
-      animateContent?.addEventListener(
-        "animationend",
-        () => animateContent.classList.remove("animate4"),
-        { once: true }
-      );
-      animateImage.classList.add("animate5");
-      animateImage?.addEventListener(
-        "animationend",
-        () => animateImage.classList.remove("animate5"),
-        { once: true }
-      );
+      animationCodeNext();
+    }else{
+      setSlideState(0);
+      animationCodeNext();
     }
   };
+
   const slides = [
     {
       imgSrc: image0,
@@ -129,4 +137,4 @@ const MyCarousel = () => {
   );
 };
 
-export default MyCarousel;
+export default Stories;

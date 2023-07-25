@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
   box-sizing: border-box;
-  
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   margin: 0px;
   padding: 0px;
-  font-family: 'segoe ui';
+  font-family: "Ubuntu", sans-serif;
   background-color: #f0ede1;
 }
