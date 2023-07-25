@@ -8,16 +8,14 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-      <Navbar/>
-      <CarouselComponent/>
-      <MyCarousel/>
-      <GoToTop/>
+     
   
       <header>
         <Navbar />
       </header>
       <main>
         <CarouselComponent />
+        <MyCarousel/>
         <GoToTop />
       </main>
       <footer>
