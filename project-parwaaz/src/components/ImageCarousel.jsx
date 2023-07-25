@@ -1,43 +1,125 @@
-import React from 'react'
-import "../styles/imgCarousel.css"
-
+import "../styles/imgCarousel.css";
 export default function ImageCarousel() {
   return (
     <>
-    <div className='img-carousel'>
-        {/* <div className='useless'></div> */}
-      <div className='section'>
-        <div className='article'>     
-            <ul id='img-ul'>
-              <li id='img-list'>
-                <img src="http://dummyimage.com/600x400/000000/ffffff.png" className='row-img'/>
-              </li>
-              <li id='img-list'>
-                <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" className='row-img'/>
-              </li>
-              <li id='img-list'>
-                <img src="http://dummyimage.com/600x400/000000/ffffff.png" className='row-img'/>
-              </li>
-              <li id='img-list'>
-                <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" className='row-img'/>
-              </li>
-              <li id='img-list'>
-                <img src="http://dummyimage.com/600x400/000000/ffffff.png" className='row-img'/>
-              </li>
-              <li id='img-list'>
-                <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" className='row-img'/>
-              </li>
-              <li id='img-list'>
-                <img src="http://dummyimage.com/600x400/000000/ffffff.png" className='row-img'/>
-              </li>
-              <li id='img-list'>
-                <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" className='row-img'/>
-              </li>
-            </ul>
+      <div className="img-carousel">
+        <div className="slider">
+          <div className="slide-track">
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                height="300"
+                width="250"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-    </div>
-      
+      </div>
     </>
   );
 }
