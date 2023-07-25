@@ -2,16 +2,15 @@
     width: 100%;
     color: #ECE5C7;
     position: relative;
-    z-index: 10;
-
+    
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     height: 10vh;
-    width: 100%;
-    background-color: #116A7B;
+    width:100%;
+    background-color: #ECE5C7;
     position: relative;
 }
 
@@ -40,15 +39,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 450;
 }
 
 .option {
     display: inline-block;
     padding: 0px 15px;
     text-decoration: none;
-    color: #ECE5C7;
-    background-color: #116A7B;
+    background-color: #ECE5C7;
+    color: #116A7B;
 }
 
 @media only screen and (min-width:768px) {
@@ -57,7 +57,7 @@
         display: flex;
         margin-top: 5px;
         height: 3px;
-        background-color: green;
+        background-color: #116A7B;
         width: 100%;
         transform: scaleX(0);
         transform-origin: left;
@@ -100,12 +100,12 @@
 
     .nav>.nav-btn>label:hover,
     .nav #nav-check:checked~.nav-btn>label {
-        background-color: #116A7B;
+        background-color: #ECE5C7;
         cursor: pointer;
     }
 
     .nav #nav-check:checked~.nav-btn>label:hover {
-        background-color: #116A7B;
+        background-color: #ECE5C7;
         cursor: pointer;
     }
 
@@ -113,7 +113,7 @@
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 3px solid #ECE5C7;
+        border-top: 3px solid #116A7B;
     }
 
     .nav-links::-webkit-scrollbar {
@@ -132,8 +132,7 @@
     .nav>.nav-links {
         position: absolute;
         display: flex;
-        flex-direction: column;
-
+        flex-direction: column; 
         width: 100%;
         height: 0px;
         transition: all 0.3s ease-in;
@@ -148,7 +147,7 @@
         flex: 100%;
         width: 100%;
         padding: 15px;
-        background: linear-gradient(to left, #116A7B 50%, grey 50%) right !important;
+        background: linear-gradient(to left, #ECE5C7 50%, #CDC2AE 50%) right !important;
         background-size: 200% !important;
         transition: 0.5s ease-in;
     }
@@ -165,6 +164,7 @@
         animation: slide-down 0.5s ease-in-out;
         height: auto;
         overflow-y: auto;
+        z-index: 10;
     }
 
     @keyframes slide-down {

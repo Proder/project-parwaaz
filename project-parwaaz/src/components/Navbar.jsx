@@ -25,16 +25,16 @@ const Navbar = () => {
             About Us
           </a>
           <a href="#" className="option">
-            Contact Us
+            Volunteering
           </a>
           <a href="#" className="option">
-            Item 1
+            Item3
           </a>
           <a href="#" className="option">
-            Item 2
+            Donate
           </a>
           <a href="#" className="option">
-            Item 3
+            Contact
           </a>
         </div>
       </div>
