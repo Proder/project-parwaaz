@@ -29,10 +29,16 @@ const Navbar = () => {
         </div>
 
         <div className="nav-btn">
-          <label htmlFor="nav-check" />
+          <label htmlFor="nav-check" >
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
         </div>
 
         <div className="nav-links">
+          <div className="empty-div"></div>
+          <div className="empty-div"></div>
           <Link to="/" className="option">
             Home
           </Link>

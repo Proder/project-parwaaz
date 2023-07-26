@@ -1,6 +1,6 @@
 .navbar-container {
     width: 100%;
-    color: #f6efdd;
+    /* color: #f6efdd; */
     position: relative;
     z-index: 999;
     box-shadow: 0px 5px 10px 0px #aaa;
@@ -40,7 +40,11 @@
     font-size: 15px;
     border-radius: 50%;
     aspect-ratio: 1;
-    background-color: red;
+
+}
+
+.empty-div{
+    display: none;
 }
 
 .nav>.nav-btn {
@@ -69,7 +73,7 @@
         display: flex;
         margin-top: 5px;
         height: 3px;
-        background-color: #116A7B;
+        /* background-color: #116A7B; */
         width: 100%;
         transform: scaleX(0);
         transform-origin: left;
@@ -80,6 +84,7 @@
         transform: scaleX(1);
     }
 }
+       
 
 
 .nav>#nav-check {
@@ -125,7 +130,7 @@
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 3px solid #116A7B;
+        border-top: 3px solid black;
     }
 
     .nav-links::-webkit-scrollbar {
@@ -159,7 +164,7 @@
         flex: 100%;
         width: 100%;
         padding: 15px;
-        background: linear-gradient(to left, #f6efdd 50%, #CDC2AE 50%) right !important;
+        /* background: linear-gradient(to left, #f6efdd 50%, #CDC2AE 50%) right !important; */
         background-size: 200% !important;
         transition: 0.5s ease-in;
     }
