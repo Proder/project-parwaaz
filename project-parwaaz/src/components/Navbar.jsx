@@ -1,7 +1,7 @@
 import "../styles/navbar.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import Logo from "../assets/logo.jpg"
 const Navbar = () => {
 
   const [isSticky, setIsSticky] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="nav">
         <input type="checkbox" id="nav-check" />
         <div className="nav-logo-container">
-          <div className="nav-logo">Logo</div>
+          <img src={Logo} />
         </div>
 
         <div className="nav-btn">
