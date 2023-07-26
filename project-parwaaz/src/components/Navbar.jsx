@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="nav">
         <input type="checkbox" id="nav-check" />
         <div className="nav-logo-container">
-          <img src={Logo} />
+          <img className="logo" src={Logo} />
         </div>
 
         <div className="nav-btn">
