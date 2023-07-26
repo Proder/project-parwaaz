@@ -37,19 +37,19 @@ const Navbar = () => {
         </div>
 
         <div className="nav-links">
-          <div className="empty-div"></div>
-          <div className="empty-div"></div>
+          <div className="option"></div>
+          <div className="option empty-div"></div>
           <Link to="/" className="option">
             Home
           </Link>
           <Link to="/About" className="option">
             About Us
           </Link>
-          <Link to="/Volunteer" className="option">
-            Volunteering
-          </Link>
           <Link to="#" className="option">
-            Item3
+            Why Children 
+          </Link>
+          <Link to="/Volunteer" className="option">
+            Volunteer
           </Link>
           <Link to="/Donate" className="option">
             Donate

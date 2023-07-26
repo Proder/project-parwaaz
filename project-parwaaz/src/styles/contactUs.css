@@ -3,7 +3,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-
 }
 
 .contact-cards-container {
@@ -18,10 +17,10 @@
 
 .contact-card {
     position: relative;
-    background-color: lightskyblue;
+    background-color: white;
     height: 200px;
     width: 350px;
-    box-shadow: 5px 5px 10px 5px #aaa;
+    box-shadow: 3px 5px 2px 2px #aaa;
     overflow: hidden;
 }
 
@@ -29,7 +28,7 @@
     width: 150%;
 }
 .contact-card:hover .contact-title {
-    color: turquoise;
+    color: wheat;
 }
 .contact-card:hover .contact-info{
     color: whitesmoke;
@@ -41,12 +40,12 @@
     height: 0;
     width: 40%;
     transition: width 0.5s ease-in;
-    border-color: transparent transparent lightseagreen transparent;
+    border-color: transparent transparent #3A5D87 transparent;
     border-width: 0 100px 200px 0;
 }
 
 .contact-card i {
-    color: turquoise;
+    color: white;
     z-index: 50;
     position: absolute;
     bottom: 15px;
@@ -69,25 +68,22 @@
 }
 
 .contact-title {
-    color: darkcyan;
+    color: #3A5D87;
     
 }
 .contact-info{
     text-align: right;
-    color: darkslategray;
+    color: rgb(51, 62, 62);
 }
 @media screen and (max-width:1024px) and (min-width:768px) {
     .contact-card {
-
         height: 150px;
         width: 250px;
 
     }
 
     .corner-top-right-bevel {
-
         width: 50%;
-
         border-width: 0 100px 150px 0;
     }
 }
@@ -98,4 +94,9 @@
         flex-direction: column;
         row-gap: 20px;
     }
+}
+
+iframe{
+    padding-bottom: 5vh;
+    
 }

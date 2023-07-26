@@ -125,6 +125,7 @@ const Stories = () => {
           </div>
         </div>
         <i
+          id="right-arrow"
           className="fa-solid fa-circle-chevron-right fa-2xl"
           onClick={NextImage}
         />
