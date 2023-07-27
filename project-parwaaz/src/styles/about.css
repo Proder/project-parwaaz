@@ -31,3 +31,11 @@
 .vision-img{
     width: 100%;
 }
+
+.waves-svg{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

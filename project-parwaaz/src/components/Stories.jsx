@@ -1,5 +1,5 @@
 import "../styles/myCarousel.css";
-// import image0 from "../assets/desk.png";
+
 import image1 from "../assets/floral.jpg";
 import image2 from "../assets/diwali.jpg";
 import image3 from "../assets/Simplicity.jpg";

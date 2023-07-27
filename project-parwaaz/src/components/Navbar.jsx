@@ -1,9 +1,8 @@
 import "../styles/navbar.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.jpg"
+import Logo from "../assets/logo.jpg";
 const Navbar = () => {
-
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -13,12 +12,11 @@ const Navbar = () => {
 
       setIsSticky(shouldStick);
     };
-      window.addEventListener("scroll", handleScroll);
-      return () => {window.removeEventListener("scroll", handleScroll);};
-
-  
-  },[]);
-
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className={`navbar-container ${isSticky ? "sticky" : ""}`}>
@@ -29,7 +27,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav-btn">
-          <label htmlFor="nav-check" >
+          <label htmlFor="nav-check">
             <span></span>
             <span></span>
             <span></span>
@@ -46,7 +44,7 @@ const Navbar = () => {
             About Us
           </Link>
           <Link to="#" className="option">
-            Why Children 
+            Why Children
           </Link>
           <Link to="/Volunteer" className="option">
             Volunteer

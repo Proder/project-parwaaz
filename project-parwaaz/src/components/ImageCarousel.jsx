@@ -13,7 +13,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
                 height="300"
@@ -21,7 +21,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
                 height="300"
@@ -29,7 +29,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
                 height="300"
@@ -37,7 +37,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
                 height="300"
@@ -45,7 +45,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
                 height="300"
@@ -53,7 +53,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
                 height="300"
@@ -61,7 +61,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
                 height="300"
@@ -69,7 +69,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
                 height="300"
@@ -77,7 +77,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
                 height="300"
@@ -85,7 +85,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
                 height="300"
@@ -93,7 +93,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
                 height="300"
@@ -101,7 +101,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
                 height="300"
@@ -109,7 +109,7 @@ export default function ImageCarousel() {
                 alt=""
               />
             </div>
-            <div className="slide">
+            <div className="img-slide">
               <img
                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
                 height="300"
