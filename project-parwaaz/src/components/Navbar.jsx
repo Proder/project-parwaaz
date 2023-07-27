@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav-links">
-          <div className="option"></div>
+          <div className="option empty-div"></div>
           <div className="option empty-div"></div>
           <Link to="/" className="option">
             Home

@@ -81,6 +81,7 @@ export default function About() {
             and scrambled it to make a type specimen book.
           </p>
         </div>
+        
       </div>
     </>
   );

@@ -9,35 +9,32 @@ import { useState } from "react";
 const Stories = () => {
   const [slideState, setSlideState] = useState(0);
 
-  const PrevImage = () => {
+  const animatePrevSlide = () => {
     const animateTitle = document.getElementById("slide-title");
     const animateContent = document.getElementById("slide-content");
     const animateImage = document.getElementById("slide-image");
 
-    if (slideState > 0) {
-      setSlideState((prevState) => prevState - 1);
-      animateTitle.classList.add("animate1");
-      animateTitle?.addEventListener(
-        "animationend",
-        () => animateTitle.classList.remove("animate1"),
-        { once: true }
-      );
-      animateContent.classList.add("animate2");
-      animateContent?.addEventListener(
-        "animationend",
-        () => animateContent.classList.remove("animate2"),
-        { once: true }
-      );
-      animateImage.classList.add("animate5");
-      animateImage?.addEventListener(
-        "animationend",
-        () => animateImage.classList.remove("animate5"),
-        { once: true }
-      );
-    }
+    animateTitle.classList.add("animate1");
+    animateTitle?.addEventListener(
+      "animationend",
+      () => animateTitle.classList.remove("animate1"),
+      { once: true }
+    );
+    animateContent.classList.add("animate2");
+    animateContent?.addEventListener(
+      "animationend",
+      () => animateContent.classList.remove("animate2"),
+      { once: true }
+    );
+    animateImage.classList.add("animate5");
+    animateImage?.addEventListener(
+      "animationend",
+      () => animateImage.classList.remove("animate5"),
+      { once: true }
+    );
   };
 
-  const animationCodeNext = () =>{
+  const animateNextSlide = () => {
     const animateTitle = document.getElementById("slide-title");
     const animateContent = document.getElementById("slide-content");
     const animateImage = document.getElementById("slide-image");
@@ -60,19 +57,28 @@ const Stories = () => {
       () => animateImage.classList.remove("animate5"),
       { once: true }
     );
-  }
+  };
+
+  const PrevImage = () => {
+    if (slideState > 0) {
+      setSlideState((prevState) => prevState - 1);
+      animatePrevSlide();
+    } else {
+      setSlideState(slides.length - 1);
+      animatePrevSlide();
+    }
+  };
   const NextImage = () => {
     if (slideState < slides.length - 1) {
       setSlideState((prevState) => prevState + 1);
-      animationCodeNext();
-    }else{
+      animateNextSlide();
+    } else {
       setSlideState(0);
-      animationCodeNext();
+      animateNextSlide();
     }
   };
 
   const slides = [
- 
     {
       imgSrc: image1,
       title: "Title of Slide2",
