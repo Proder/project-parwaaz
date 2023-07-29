@@ -18,6 +18,16 @@ const Navbar = () => {
     };
   }, []);
 
+  const activateTab = (e) => {
+    document.querySelectorAll(".option").forEach((element) => {
+      if (element !== e.target) {
+        element.classList.remove("active");
+      } else {
+        element.classList.add("active");
+      }
+    });
+  };
+
   return (
     <div className={`navbar-container ${isSticky ? "sticky" : ""}`}>
       <div className="nav">
@@ -37,22 +47,22 @@ const Navbar = () => {
         <div className="nav-links">
           <div className="option empty-div"></div>
           <div className="option empty-div"></div>
-          <Link to="/" className="option">
+          <Link to="/" className="option" onClick={(e) => activateTab(e)} >
             Home
           </Link>
-          <Link to="/About" className="option">
+          <Link to="/About" className="option" onClick={(e) => activateTab(e)}>
             About Us
           </Link>
-          <Link to="#" className="option">
+          <Link to="#" className="option" onClick={(e) => activateTab(e)}>
             Why Children
           </Link>
-          <Link to="/Volunteer" className="option">
+          <Link to="/Volunteer" className="option" onClick={(e) => activateTab(e)}>
             Volunteer
           </Link>
-          <Link to="/Donate" className="option">
+          <Link to="/Donate" className="option" onClick={(e) => activateTab(e)}>
             Donate
           </Link>
-          <Link to="/Contact" className="option">
+          <Link to="/Contact" className="option" onClick={(e) => activateTab(e)}>
             Contact
           </Link>
         </div>
