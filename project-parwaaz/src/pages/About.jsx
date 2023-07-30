@@ -1,11 +1,35 @@
 import "../styles/about.css";
-
+import AnimatedBox from "../components/AnimatedBox";
+import { useState, useEffect } from "react";
 
 export default function About() {
+  const [scrollY, setScrollY] = useState(0);
+
+  const [isFixed, setIsFixed] = useState(true);
+  // Handle the scroll event
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+    setIsFixed(window.scrollY < 690 ? (true) : (false))
+  };
+
+  // Attach the scroll event listener on component mount
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Adjust the animation values as per your requirements
+  const opacity = 1 - scrollY * 0.0015; // Decrease opacity as the user scrolls down
+  const translate = scrollY*1.05;
   return (
     <>
-      <div className="vision">
-        <svg
+    <div className="about-page-container">
+
+    
+      <div className={`vision ${isFixed ? "fixed" : ""}`}>
+        {/* <svg
           width="100%"
           height="100%"
           id="svg"
@@ -69,7 +93,7 @@ export default function About() {
             fillOpacity="1"
             className="transition-all duration-300 ease-in-out delay-150 path-3"
           ></path>
-        </svg>
+        </svg> */}
         <div className="vision-title">
           <span>Our Vision</span>
         </div>
@@ -83,6 +107,11 @@ export default function About() {
         </div>
         
       </div>
+      <div>
+          {/* The animated part */}
+          <AnimatedBox opacity={opacity} translate={translate}/>
+        </div>
+        </div>
     </>
   );
 }

@@ -7,12 +7,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const stickyOffset = 600;
+      const stickyOffset = 690;
       const shouldStick = window.scrollY > stickyOffset;
 
       setIsSticky(shouldStick);
     };
     window.addEventListener("scroll", handleScroll);
+   
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -47,7 +48,7 @@ const Navbar = () => {
         <div className="nav-links">
           <div className="option empty-div"></div>
           <div className="option empty-div"></div>
-          <Link to="/" className="option" onClick={(e) => activateTab(e)} >
+          <Link to="/" className="option active" onClick={(e) => activateTab(e)} >
             Home
           </Link>
           <Link to="/About" className="option" onClick={(e) => activateTab(e)}>
