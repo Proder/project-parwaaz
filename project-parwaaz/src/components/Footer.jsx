@@ -27,7 +27,7 @@ export default function Footer() {
             Blog
           </Link>
           <span className='spacer'>.</span>
-          <Link to="../pages/Contact" className="list-items">
+          <Link to="../pages/ContactUs" className="list-items">
             Contact Us
           </Link>
         </div>
