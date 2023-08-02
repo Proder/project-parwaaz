@@ -49,22 +49,25 @@ const Navbar = () => {
           <div className="option empty-div"></div>
           <div className="option empty-div"></div>
           <Link to="/" className="option active" onClick={(e) => activateTab(e)} >
-            Home
+            HOME
           </Link>
           <Link to="/About" className="option" onClick={(e) => activateTab(e)}>
-            About Us
+            ABOUT US
           </Link>
           <Link to="#" className="option" onClick={(e) => activateTab(e)}>
-            Why Children
+            WHY CHILDREN
           </Link>
           <Link to="/Volunteer" className="option" onClick={(e) => activateTab(e)}>
-            Volunteer
+            VOLUNTEER
           </Link>
-          <Link to="/Donate" className="option" onClick={(e) => activateTab(e)}>
-            Donate
+          <Link to="/faqs" className="option" onClick={(e) => activateTab(e)}>
+            FAQ
+          </Link>
+          <Link to="/apply" className="option" onClick={(e) => activateTab(e)}>
+            APPLY
           </Link>
           <Link to="/Contact" className="option" onClick={(e) => activateTab(e)}>
-            Contact
+            CONTACT
           </Link>
         </div>
       </div>

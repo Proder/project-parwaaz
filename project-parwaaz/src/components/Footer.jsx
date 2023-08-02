@@ -19,8 +19,8 @@ export default function Footer() {
             Financials
           </Link>
           <span className='spacer'>.</span>
-          <Link to="../pages/Donate" className="list-items">
-            Donate Now
+          <Link to="../pages/faqs" className="list-items">
+            FAQ
           </Link>
           <span className='spacer'>.</span>
           <Link to="../pages/Blog" className="list-items">
@@ -38,8 +38,8 @@ export default function Footer() {
         <Link to={instaURL}>
           <i className="fa-brands fa-instagram" id='social-icons'/>
         </Link>
-          <i className="fa-brands fa-twitter" id='social-icons' />
-          <i className="fa-brands fa-youtube" id='social-icons' />
+          {/* <i className="fa-brands fa-twitter" id='social-icons' />
+          <i className="fa-brands fa-youtube" id='social-icons' /> */}
         </div>
         <div className='footer-line'><span>©2023 Project Parwaaz | All rights reserved</span></div>
       </div>
