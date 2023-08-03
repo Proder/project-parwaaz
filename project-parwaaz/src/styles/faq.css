@@ -8,6 +8,7 @@
 }
 
 .all-faqs-container {
+    color:#ECE5C7;
     height: auto;
     width: auto;
     overflow: hidden;
@@ -60,19 +61,20 @@
 }
 
 .faq-title i {
- 
+    color: #3A5D87;
     z-index: 55;
     cursor: pointer;
     transition: transform 0.25s ease-in-out
 }
 
 .faq-title.selected>i {
+    color: #ECE5C7;
     transform: rotate(45deg);
 }
 
 .faq-content {
     height: 0px;
-
+    
     background-color: lightslategray;
     width: 100%;
     transition: all 0.5s ease;
