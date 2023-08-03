@@ -117,15 +117,15 @@
     animation-duration: 1s;
 }
 .img:nth-child(3){
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 .img:nth-child(4){
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .img:nth-child(5) > img {
     transform: translateX(-20%)translateY(-75%);
-    animation: reveal 4s ease-in;
+    animation: reveal 2.5s ease-in;
 }
 
 
