@@ -31,10 +31,14 @@ export default function About() {
             <span>Our Vision</span>
            
           </div>
-          <div className="vision-text">
-       
+          <div className="vision-text-container">
+            <div className="vision-text">
+              
+            
+             <p>
               Giving wings to the future of Jammu and Kashmir by delievering education, dreams and chocolates.
-        
+              </p>
+              </div>
           </div>
         </div>
         <div>

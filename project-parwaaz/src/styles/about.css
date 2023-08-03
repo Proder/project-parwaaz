@@ -1,49 +1,28 @@
-
 .vision {
     width: 100%;
     z-index: 100;
-   position: absolute;
+    position: absolute;
     height: auto;
     display: flex;
-justify-content:center;
-align-items: end;
+    justify-content: center;
+    align-items: end;
     padding: 25px 50px;
     flex-direction: column;
 
 }
 
 
-.vision-title{
+.vision-title {
     font-size: 50px;
     font-weight: bolder;
     color: black;
     display: flex;
     justify-content: right;
     width: 100%;
-    
     padding: 20px 50px;
 }
-/* 
-.vision-title span{
-   
-    top: 5vh;
-    text-align: center;
- 
-} */
 
-.vision-text::after{
-    content: '';
-    margin-right: -13px;
-    margin-left: 13px;
-    height: auto;
-    width: 11px;
- 
-    background-color: black;
-    
-}
-
-.vision-text{
-
+.vision-text-container {
 
     padding: 25px 50px;
     display: flex;
@@ -51,11 +30,39 @@ align-items: end;
     text-align: right;
     width: 40%;
     font-size: 18px;
-    font-weight:250;
+    font-weight: 250;
     margin-right: 15px;
-   
-}
-.vision-img{
-    width: 100%;
+overflow: hidden;
 }
 
+.vision-text-container::after {
+    content: '';
+    margin-right: -13px;
+    margin-left: 13px;
+    height: auto;
+    width: 11px;
+    background-color: black;
+}
+.vision-text > p{
+    animation: slideFromRight 2.5s ease-in;
+}
+.vision-text{
+    
+    overflow: hidden;
+    height: 100%;
+}
+@keyframes slideFromRight {
+    0%{
+        transform: translateX(100%);
+
+    }
+    100%{
+        transform: translateX(0);
+        
+    }
+}
+
+
+.vision-img {
+    width: 100%;
+}
