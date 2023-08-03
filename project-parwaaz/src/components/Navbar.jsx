@@ -66,7 +66,7 @@ const Navbar = () => {
           <Link to="/apply" className="option" onClick={(e) => activateTab(e)}>
             APPLY
           </Link>
-          <Link to="/Contact" className="option" onClick={(e) => activateTab(e)}>
+          <Link to="/Contact" className="option" onClick={(e) => activateTab(e)} id="last-tab">
             CONTACT
           </Link>
         </div>

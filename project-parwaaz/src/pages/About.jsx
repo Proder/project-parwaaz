@@ -9,7 +9,7 @@ export default function About() {
   // Handle the scroll event
   const handleScroll = () => {
     setScrollY(window.scrollY);
-    setIsFixed(window.scrollY < 690 ? (true) : (false))
+    setIsFixed(window.scrollY < 690 ? true : false);
   };
 
   // Attach the scroll event listener on component mount
@@ -22,14 +22,12 @@ export default function About() {
 
   // Adjust the animation values as per your requirements
   const opacity = 1 - scrollY * 0.0015; // Decrease opacity as the user scrolls down
-  const translate = scrollY*1.05;
+  const translate = scrollY * 1.05;
   return (
     <>
-    <div className="about-page-container">
-
-    
-      <div className={`vision ${isFixed ? "fixed" : ""}`}>
-        {/* <svg
+      <div className="about-page-container">
+        <div className={`vision ${isFixed ? "fixed" : ""}`}>
+          {/* <svg
           width="100%"
           height="100%"
           id="svg"
@@ -94,24 +92,23 @@ export default function About() {
             className="transition-all duration-300 ease-in-out delay-150 path-3"
           ></path>
         </svg> */}
-        <div className="vision-title">
-          <span>Our Vision</span>
+          <div className="vision-title">
+            <span>Our Vision</span>
+          </div>
+          <div className="vision-text">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industrys standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
         </div>
-        <div className="vision-text">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-        </div>
-        
-      </div>
-      <div>
+        <div>
           {/* The animated part */}
-          <AnimatedBox opacity={opacity} translate={translate}/>
+          <AnimatedBox opacity={opacity} translate={translate} />
         </div>
-        </div>
+      </div>
     </>
   );
 }
