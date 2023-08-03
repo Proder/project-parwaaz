@@ -1,4 +1,16 @@
 .carousel-image{
     width: 100vw;
-    height: 90vh;
+    height: 75vh;
+}
+
+.carousel-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+    /* padding: 5vw 5vw 5vw 5vw; */
+    margin: auto;
+    margin-top: 4vw;
 }

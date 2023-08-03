@@ -7,6 +7,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const CarouselComponent = () => {
   return (
+    <div className="carousel-component">
     <Carousel
       showArrows={true}
       onChange
@@ -16,7 +17,7 @@ const CarouselComponent = () => {
       infiniteLoop
       fade={true}
       showStatus={false}
-      showIndicators={false}
+      showIndicators={true}
       showThumbs={false}
     >
       <div>
@@ -29,6 +30,7 @@ const CarouselComponent = () => {
         <img src={imageThree} className="carousel-image" />
       </div>
     </Carousel>
+  </div>
   );
 };
 

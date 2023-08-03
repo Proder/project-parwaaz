@@ -102,10 +102,10 @@
     width: 100%;
     height: 90vh;
     display: flex;
-
     justify-content: start;
     margin-left: 5vw;
     align-items: end;
+    z-index: 100;
 }
 .img{
     animation: bottomReveal 0.5s ease-in;
@@ -126,6 +126,7 @@
 .img:nth-child(5) > img {
     transform: translateX(-20%)translateY(-75%);
     animation: reveal 4s ease-in;
+    
 }
 
 
