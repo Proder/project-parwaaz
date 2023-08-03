@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import GoToTop from "../components/GoToTop"
 
 const Layout = (props) => {
   return (
@@ -8,7 +9,10 @@ const Layout = (props) => {
       <header>
         <Navbar />
       </header>
-      <main>{props.children}</main>
+      <main>
+        {props.children}
+        <GoToTop />
+      </main>
       <footer>
         <Footer />
       </footer>
