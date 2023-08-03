@@ -6,6 +6,7 @@ import About from "./pages/About"
 import Volunteer from "./pages/Volunteer";
 import ContactUs from "./pages/ContactUs";
 import Faq from "./pages/Faq";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/faqs" element = {<Faq/>}/>
         <Route path="/Contact" element={<ContactUs/>} />
       </Routes>
+      <ScrollToTop/>
     </Layout>
   );
 };

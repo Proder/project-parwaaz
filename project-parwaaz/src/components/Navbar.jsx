@@ -7,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const stickyOffset = 690;
+      const stickyOffset = 550;
       const shouldStick = window.scrollY > stickyOffset;
 
       setIsSticky(shouldStick);

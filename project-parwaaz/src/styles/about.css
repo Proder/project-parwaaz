@@ -2,12 +2,11 @@
     height: 500vh;
 }
 .vision {
-    position: relative;
-    
+    z-index: 100;
+    position: absolute;
+    top: 50px;
 }
-.vision.fixed{
-    position: fixed;
-}
+
 
 
 .vision-title{
