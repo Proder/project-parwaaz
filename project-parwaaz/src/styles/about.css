@@ -3,7 +3,7 @@
 }
 .vision {
     position: relative;
-
+    
 }
 .vision.fixed{
     position: fixed;
@@ -30,6 +30,7 @@
 }
 
 .vision-text{
+    width: 75%;
     font-size: 18px;
     font-weight:250;
     text-align: center;
