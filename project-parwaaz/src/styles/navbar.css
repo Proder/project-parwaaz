@@ -29,7 +29,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 999;
 }
 
 .nav {
@@ -46,6 +46,8 @@
     aspect-ratio: 1;
     margin-left: 5vw;
 }
+
+
 
 .logo {
      width: 175%;
@@ -215,7 +217,7 @@
         animation: slide-down 0.5s ease-in-out;
         height: auto;
         overflow-y: auto;
-        z-index: 10;
+        z-index: 100;
     }
 
     @keyframes slide-down {
