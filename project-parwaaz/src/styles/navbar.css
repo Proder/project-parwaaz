@@ -2,7 +2,7 @@
     width: 100%;
     /* color: #f6efdd; */
     position: relative;
-    z-index: 999;
+    z-index: 15000;
     box-shadow: 0px 5px 10px 0px #3a5d878e;
     height: 70px;
     
@@ -29,7 +29,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 15000;
 }
 
 .nav {

@@ -33,8 +33,6 @@ export default function About() {
           </div>
           <div className="vision-text-container">
             <div className="vision-text">
-              
-            
              <p>
               Giving wings to the future of Jammu and Kashmir by delievering education, dreams and chocolates.
               </p>
@@ -45,7 +43,18 @@ export default function About() {
           {/* The animated part */}
           <AnimatedBox opacity={opacity} translate={translate} />
         </div>
-
+        <div className={`mission ${isFixed ? "fixed" : ""}`}>
+          <div className="mission-title">
+            <span>Our Mission</span>
+          </div>
+          <div className="mission-text-container">
+            <div className="mission-text">
+              <p>
+                To provide education to the youth of Jammu and Kashmir.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
