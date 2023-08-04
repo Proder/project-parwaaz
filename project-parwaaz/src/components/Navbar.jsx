@@ -107,7 +107,7 @@ const Navbar = () => {
             FAQ
           </Link>
           <Link
-            to="/apply"
+            to="https://docs.google.com/forms/d/e/1FAIpQLScE5ZAOz9KGSfEaXCKceR3ErwG_m_s43U5_poR8vgCngoIRgA/viewform?pli=1"
             className="option"
             id="Apply"
             onClick={(e) => activateTab(e)}
