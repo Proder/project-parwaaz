@@ -33,7 +33,7 @@ const AnimatedBox = () => {
           <div className="img img4">
             <img src={fourth} />
           </div>
-          <div className="img img4">
+          <div className="img img5">
             <img src={fifth} />
           </div>
         </div>

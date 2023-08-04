@@ -2,28 +2,29 @@
     width: 100%;
     z-index: 100;
     position: absolute;
-    height: auto;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: end;
     padding: 25px 50px;
     flex-direction: column;
-
+    background-color: #3A5D87;
 }
 
 
 .vision-title {
     font-size: 50px;
     font-weight: bolder;
-    color: black;
+    color: #f6efdd;
     display: flex;
     justify-content: right;
     width: 100%;
     padding: 20px 50px;
+    
 }
 
 .vision-text-container {
-
+color: #f6efdd;
     padding: 25px 50px;
     display: flex;
     justify-content: right;
@@ -41,7 +42,7 @@ overflow: hidden;
     margin-left: 13px;
     height: auto;
     width: 11px;
-    background-color: black;
+    background-color: #f6efdd;
 }
 .vision-text > p{
     animation: slideFromRight 2.5s ease-in;
