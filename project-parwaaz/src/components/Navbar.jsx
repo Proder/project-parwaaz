@@ -5,30 +5,19 @@ import Logo from "../assets/logo.jpg";
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
-  const routeName = location.pathname.replace("/", "");
-
+  const routeName = location.pathname
   useEffect(() => {
-    switch (routeName) {
-      case "":
-        document.getElementById("Home").classList.add("active");
-        break;
-      case "About":
-        document.getElementById("About").classList.add("active");
-        break;
+    document.querySelectorAll(".option").forEach((element) => {
 
-      case "Volunteer":
-        document.getElementById("Volunteer").classList.add("active");
-        break;
-      case "faqs":
-        document.getElementById("Faqs").classList.add("active");
-        break;
-      case "apply":
-        document.getElementById("Apply").classList.add("active");
-        break;
-      case "Contact":
-        document.getElementById("Contact").classList.add("active");
-        break;
-    }
+      if (element?.dataset?.path === routeName) {
+        element.classList.add("active");
+      } else {
+        element.classList.remove("active");
+      }
+    });
+  }, [routeName]);
+  useEffect(() => {
+
     const handleScroll = () => {
       const stickyOffset = 550;
       const shouldStick = window.scrollY > stickyOffset;
@@ -42,15 +31,15 @@ const Navbar = () => {
     };
   }, []);
 
-  const activateTab = (e) => {
-    document.querySelectorAll(".option").forEach((element) => {
-      if (element !== e.target) {
-        element.classList.remove("active");
-      } else {
-        element.classList.add("active");
-      }
-    });
-  };
+  // const activateTab = (e) => {
+  //   document.querySelectorAll(".option").forEach((element) => {
+  //     if (element !== e.target) {
+  //       element.classList.remove("active");
+  //     } else {
+  //       element.classList.add("active");
+  //     }
+  //   });
+  // };
 
   return (
     <div className={`navbar-container ${isSticky ? "sticky" : ""}`}>
@@ -73,52 +62,45 @@ const Navbar = () => {
           <div className="option empty-div"></div>
           <Link
             to="/"
-            className="option "
-            id="Home"
-            onClick={(e) => activateTab(e)}
+            className="option"
+            data-path="/"
           >
             HOME
           </Link>
           <Link
             to="/About"
             className="option"
-            id="About"
-            onClick={(e) => activateTab(e)}
+            data-path='/About'
           >
             ABOUT US
           </Link>
-          {/* <Link to="#" className="option" id="Why" onClick={(e) => activateTab(e)}>
-            WHY CHILDREN
-          </Link> */}
+
           <Link
             to="/Volunteer"
             className="option"
-            id="Volunteer"
-            onClick={(e) => activateTab(e)}
+            data-path='/Volunteer'
           >
             VOLUNTEER
           </Link>
           <Link
             to="/faqs"
             className="option"
-            id="Faqs"
-            onClick={(e) => activateTab(e)}
+            data-path='/faqs'
           >
             FAQ
           </Link>
           <Link
             to="https://docs.google.com/forms/d/e/1FAIpQLScE5ZAOz9KGSfEaXCKceR3ErwG_m_s43U5_poR8vgCngoIRgA/viewform?pli=1"
             className="option"
-            id="Apply"
-            onClick={(e) => activateTab(e)}
+            data-path='/Apply'
           >
             APPLY
           </Link>
           <Link
             to="/Contact"
             className="option"
-            id="Contact"
-            onClick={(e) => activateTab(e)}
+
+            data-path='/Contact'
           >
             CONTACT
           </Link>

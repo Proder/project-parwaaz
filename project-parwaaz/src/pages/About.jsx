@@ -1,7 +1,7 @@
 import "../styles/about.css";
 import AnimatedBox from "../components/AnimatedBox";
 import { useState, useEffect } from "react";
-
+import missionImage from "../assets/vision-img.jpg"
 export default function About() {
   const [scrollY, setScrollY] = useState(0);
   const [isFixed, setIsFixed] = useState(true);
@@ -44,6 +44,7 @@ export default function About() {
           <AnimatedBox opacity={opacity} translate={translate} />
         </div>
         <div className={`mission ${isFixed ? "fixed" : ""}`}>
+          {/* <div className="mission-img"><img src={missionImage}/></div> */}
           <div className="mission-title">
             <span>Our Mission</span>
           </div>

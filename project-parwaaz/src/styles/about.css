@@ -68,7 +68,7 @@
   height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: start;
   padding: 25px 50px;
   flex-direction: column;
   background-color: lightslategrey;
@@ -87,18 +87,19 @@
   color: #f6efdd;
   padding: 25px 50px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
   text-align: left;
-  width: 100%;
+  width: 40%;
   font-size: 18px;
   font-weight: 250;
-  margin-left: 15px;
+
   overflow: hidden;
+  
 }
 .mission-text-container::before {
   content: "";
-  /* margin-right: -13px; */
-  margin-left: 10px;
+  margin-right: 13px;
+  margin-left: 5px;
   height: auto;
   width: 11px;
   background-color: #ffffff;
